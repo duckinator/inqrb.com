@@ -1,5 +1,5 @@
 ---
-title: 'About how_is'
+title: 'About'
 layout: page
 ---
 

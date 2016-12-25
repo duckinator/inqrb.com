@@ -16,7 +16,7 @@
 title: How Is
 email: me@duckie.co
 description: > # this means to ignore newlines until "baseurl:"
-  how_is is a tool for assessing the health of a codebase hosted on GitHub.
+  how_is is a tool for assessing the state of a codebase hosted on GitHub.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: duckinator
