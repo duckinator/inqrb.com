@@ -24,6 +24,7 @@ github_username:  how-is
 
 header_pages:
   - index.md
+  - api.md
   - config.md
   - usage.md
 
