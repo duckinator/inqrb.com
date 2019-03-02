@@ -16,8 +16,7 @@ the section on
 To acquire a personal access token:
 
 1. Go to https://github.com/settings/tokens/new
-2. For `Token description`, enter a description (e.g. "how\_is CLI
-   client").
+2. For `Token description`, enter a description (e.g. "HowIs CLI client").
 3. Scroll to the bottom of the page.
 4. Click "Generate token".
 5. Save the token somewhere. **You can't access it again.**
