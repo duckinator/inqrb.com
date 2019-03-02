@@ -4,6 +4,11 @@ layout: page
 permalink: "/usage"
 ---
 
+**If you need help**, please
+[open an issue](https://github.com/how-is/how_is), or [join the Bundler
+slack](https://slack.bundler.io) and then join in the #how\_is channel.
+
+
 ## Basic Usage
 
 The quickest way to use HowIs is to provide all of the information

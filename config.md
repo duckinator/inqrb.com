@@ -11,6 +11,11 @@ If you are using HowIs on a build server or similar, you may want to see
 the section on
 [Using Environment Variables](#using-environment-variables).
 
+**If you need help**, please
+[open an issue](https://github.com/how-is/how_is), or [join the Bundler
+slack](https://slack.bundler.io) and then join in the #how\_is channel.
+
+
 ## GitHub Access Tokens
 
 To acquire a personal access token:
