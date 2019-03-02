@@ -13,20 +13,27 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: How Is
-email: me@duckie.co
+title: HowIs
+email:
 description: > # this means to ignore newlines until "baseurl:"
-  how_is is a tool for assessing the state of a codebase hosted on GitHub.
+  HowIs is a tool for assessing the state of a codebase hosted on GitHub.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: duckinator
 github_username:  how-is
 
+header_pages:
+  - index.md
+  - config.md
+  - usage.md
+
 # Build settings
 markdown: kramdown
 theme: minima
-gems:
+plugins:
   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
+  - README.md
+  - LICENSE
