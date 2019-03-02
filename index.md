@@ -3,7 +3,7 @@ title: 'About'
 layout: page
 ---
 
-How_is is a tool which assesses the state of a GitHub repository. It
+HowIs is a tool to assess the state of a project hosted on GitHub. It
 uses the issue tracker, the codebase itself, and various APIs to
 generate status reports.
 
