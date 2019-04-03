@@ -60,7 +60,7 @@ reports = HowIs.from_config({
   }
 }, "2017-12-01")
 
-# Save all of the rports.
+# Save all of the reports.
 # This assumes all of the directories the files go in already exist!
 reports.map {|file, report| File.write(file, report) }
 ```
