@@ -38,28 +38,45 @@ For example,
     - rubygems/_posts/2019-03-01T00:00:00+00:00-report.html
     - json/rubygems/2019-03-01T00:00:00+00:00.json 
 
-Below is an example config file, [from the how-is/manual-reports
-repository](https://raw.githubusercontent.com/how-is/manual-reports/gh-pages/how-is-configs/01-rubygems-rubygems.yml).
+Below is an example config file:
 
 ```yaml
-repository: rubygems/rubygems
-reports:
+default_reports:
   html:
-    directory: rubygems/_posts
+    directory: output
     frontmatter:
       title: "%{date} Report"
       layout: default
     filename: "%{date}-report.html"
   json:
-    directory: json/rubygems
+    directory: output
     filename: "%{date}.json"
+
+repositories:
+  - repository: rubygems/rubygems
+    reports:
+      html:
+        directory: how_is/_posts
+      json:
+        directory: json/how_is
+  - repository: how-is/how_is
+    reports:
+      html:
+        directory: rubygems/_posts
+      json:
+        directory: json/rubygems
 ```
 
-The config file is a YAML file. The two root keys are `repository`
-and `reports`.
+The config file is a YAML file, and the two root keys are
+`default_reports` and `repositories`. The value of `default_reports` is
+a hash of default options used for reports.
 
-`reports` is a hash of key/value pairs, with the keys being the type of report
-("html" or "json") and the values being another hash.
+Under `repositories`, there are two keys:  `repository` and `reports`.
+
+`repository` is the name of the repository that collection of reports is for.
+
+`reports` is a hash of key/value pairs, with the keys
+being the type of report ("html" or "json") and the values being another hash.
 
 That hash can have the following keys: `directory` (the directory to place the
 report in), `filename` (the format string for filenames), and (optionally)
