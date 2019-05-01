@@ -7,7 +7,7 @@ permalink: "/api"
 The API documentation is in-progress.
 
 **If you need help**, please
-[open an issue](https://github.com/how-is/how_is), or [join the Bundler
+[open an issue](https://github.com/duckinator/inq), or [join the Bundler
 slack](https://slack.bundler.io) and then join in the #how\_is channel.
 
 ## TODO
@@ -16,7 +16,7 @@ There's still a lot of work to be done on documenting the API.
 
 Here are some features that are currently undocumented:
 
-- when `~/.config/how_is/config.yml` is used.
+- when `~/.config/inq/config.yml` is used.
 - how to use an alternative config file.
 - how to use multiple config files instead of the default.
 - how to use the default config file + additional ones.
@@ -30,7 +30,7 @@ suffice:
 ```ruby
 # Generate an HTML report for rubygems/rubygems, for the date range of
 # 2019-02-01 to 2019-03-01, and save it as rubygems-report.html:
-report = HowIs.new("rubygems/rubygems", "2019-03-01")
+report = Inq.new("rubygems/rubygems", "2019-03-01")
 report.save_as("rubygems-report.html")
 ```
 
@@ -42,7 +42,7 @@ the command line.
 
 ```
 # Generate a report from a config Hash.
-reports = HowIs.from_config({
+reports = Inq.from_config({
   repository: 'rubygems/rubygems',
   reports: {
     html: {

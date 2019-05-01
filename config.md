@@ -5,14 +5,17 @@ permalink: "/config"
 ---
 <style>h2 { margin: 1em 0 0.25em 0; } /* sigh */</style>
 
-As of v25, HowIs defaults to using a configuration file.
+NOTE:
 
-If you are using HowIs on a build server or similar, you may want to see
+- As of v25, Inq defaults to using a configuration file.
+- As of v26, HowIs became Inq.
+
+If you are using Inq on a build server or similar, you may want to see
 the section on
 [Using Environment Variables](#using-environment-variables).
 
 **If you need help**, please
-[open an issue](https://github.com/how-is/how_is), or [join the Bundler
+[open an issue](https://github.com/duckinator/inq/issues), or [join the Bundler
 slack](https://slack.bundler.io) and then join in the #how\_is channel.
 
 
@@ -21,14 +24,18 @@ slack](https://slack.bundler.io) and then join in the #how\_is channel.
 To acquire a personal access token:
 
 1. Go to https://github.com/settings/tokens/new
-2. For `Token description`, enter a description (e.g. "HowIs CLI client").
+2. For `Token description`, enter a description (e.g. "Inq CLI client").
 3. Scroll to the bottom of the page.
 4. Click "Generate token".
 5. Save the token somewhere. **You can't access it again.**
 
-**NOTE**: HowIs _only_ needs read access.
+**NOTE**: Inq _only_ needs read access.
 
-## Setting Up HowIs
+## Setting Up Inq
+
+The config file is located at `~/.config/inq/config.yml`.
+
+(FIXME: What about Windows, macOS, etc?)
 
 The format for a configuration file is:
 
@@ -51,8 +58,8 @@ pass `--no-user-config --env-config`.
 Supported environment variables:
 
 ```
-HOW_IS_GITHUB_TOKEN=<github-token>
-HOW_IS_GITHUB_USERNAME=<github-username>
+INQ_GITHUB_TOKEN=<github-token>
+INQ_GITHUB_USERNAME=<github-username>
 ```
 
 Where the values (represented with `<value-name>`) are the same as above.

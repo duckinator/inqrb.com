@@ -1,2 +1,3 @@
-# how-is.github.io
-how_is' website
+# inqrb.com
+
+Inq's website and documentation.

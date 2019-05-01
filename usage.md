@@ -5,23 +5,23 @@ permalink: "/usage"
 ---
 
 **If you need help**, please
-[open an issue](https://github.com/how-is/how_is), or [join the Bundler
+[open an issue](https://github.com/duckinator/inq), or [join the Bundler
 slack](https://slack.bundler.io) and then join in the #how\_is channel.
 
 
 ## Basic Usage
 
-The quickest way to use HowIs is to provide all of the information
+The quickest way to use Inq is to provide all of the information
 directly on the command line.
 
 For example,
 
-    $ how_is --repository rubygems/rubygems --date 2019-03-01
+    $ inq --repository rubygems/rubygems --date 2019-03-01
     Saved report to report.html.
 
 Or, if you want the report to be in `example.html`:
 
-    $ how_is --repository rubygems/rubygems --date 2019-03-01 --output example.html
+    $ inq --repository rubygems/rubygems --date 2019-03-01 --output example.html
     Saved report to example.html.
 
 ## Project Config Files
@@ -33,7 +33,7 @@ reports specified in said file.
 
 For example,
 
-    $ how_is --date 2019-03-01 --config 01-rubygems-rubygems.yml
+    $ inq --date 2019-03-01 --config rubygems.yml
     Saved reports to:
     - rubygems/_posts/2019-03-01T00:00:00+00:00-report.html
     - json/rubygems/2019-03-01T00:00:00+00:00.json 
@@ -56,15 +56,15 @@ repositories:
   - repository: rubygems/rubygems
     reports:
       html:
-        directory: how_is/_posts
-      json:
-        directory: json/how_is
-  - repository: how-is/how_is
-    reports:
-      html:
         directory: rubygems/_posts
       json:
         directory: json/rubygems
+  - repository: duckinator/inq
+    reports:
+      html:
+        directory: inq/_posts
+      json:
+        directory: json/inq
 ```
 
 The config file is a YAML file, and the two root keys are
